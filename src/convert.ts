@@ -1,7 +1,7 @@
-import { Response } from 'express';
-import { json2csvAsync as converter } from 'json-2-csv';
+import {Response} from 'express';
+import {json2csvAsync as converter} from 'json-2-csv';
 
-import { Options } from '.';
+import {Options} from '.';
 
 export const convert = (response: Response) => async (
   data: any,
@@ -11,9 +11,7 @@ export const convert = (response: Response) => async (
 ): Promise<void> => {
   const convertedData = await converter(data, options);
   const currentDate = new Date();
-  const timestamp = `${currentDate.getFullYear()}${currentDate.getMonth()}${currentDate.getDate()}.${currentDate.getHours()}${
-    currentDate.getMinutes
-  }`;
+  const timestamp = `${currentDate.getFullYear()}${currentDate.getMonth()}${currentDate.getDate()}.${currentDate.getHours()}${currentDate.getMinutes()}`;
 
   const filename = `${fileName}${appendTimestamp ? `.${timestamp}` : ''}.csv`;
 
