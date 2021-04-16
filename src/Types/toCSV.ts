@@ -1,3 +1,3 @@
-import { Options } from './options';
+import {Options} from './options';
 
-export type toCSV = (data: any, options: Options) => Promise<void>;
+export type toCSV = (data: any, options?: Options) => Promise<void>;
