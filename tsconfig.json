@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "ES5",
+    "module": "ES2020",
+    "moduleResolution": "node",
     "declaration": true,
-    "outDir": "./lib",
+    "outDir": "./lib/esm",
     "strict": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
