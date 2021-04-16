@@ -1,3 +1,3 @@
-import { Response } from 'express';
+import {Options} from './options';
 
-export type toCSV = (data: any) => Response;
+export type toCSV = (data: any, options: Options) => Promise<void>;
