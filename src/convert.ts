@@ -1,7 +1,7 @@
-import {Response} from 'express';
-import {json2csvAsync as converter} from 'json-2-csv';
+import { Response } from 'express';
+import { json2csvAsync as converter } from 'json-2-csv';
 
-import {Options} from '.';
+import { Options } from '.';
 
 export const convert = (response: Response) => async (
   data: any,
