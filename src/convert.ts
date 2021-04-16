@@ -1,7 +1,7 @@
-import { Response } from 'express';
-import { json2csvAsync as converter } from 'json-2-csv';
+import {Response} from 'express';
+import {json2csvAsync as converter} from 'json-2-csv';
 
-import { Options } from '.';
+import {Options} from '.';
 
 export const convert = (response: Response) => async (
   data: any,
@@ -35,7 +35,7 @@ const getDateField = (field: string): string => {
       returnDate = currentDate.getMonth();
       break;
     case 'day':
-      returnDate = currentDate.getDay();
+      returnDate = currentDate.getDate();
       break;
     case 'hour':
       returnDate = currentDate.getHours();
