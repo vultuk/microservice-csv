@@ -1,7 +1,7 @@
-import {NextFunction, Request, Response} from 'express';
+import { NextFunction, Request, Response } from 'express';
 
-import {convert} from './convert';
-import {toCSV} from './Types/toCSV';
+import { convert } from './convert';
+import { toCSV } from './Types/toCSV';
 
 export { Options } from './Types/options';
 
